@@ -33,7 +33,8 @@ The application integrates the **Yahoo Finance (yfinance) API** for real-time ma
 
 ### Financial Intelligence Dashboard
 
-![Dashboard](static/dashboard.png)
+![Dashboard]<img width="860" height="767" alt="image" src="https://github.com/user-attachments/assets/609ddad4-7181-480e-ac9c-e859d78ce864" />
+
 
 ---
 
