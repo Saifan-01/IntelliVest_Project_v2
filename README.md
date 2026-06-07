@@ -33,7 +33,7 @@ The application integrates the **Yahoo Finance (yfinance) API** for real-time ma
 
 ### Financial Intelligence Dashboard
 
-![Dashboard](public/dashboard.png)
+![Dashboard](static/dashboard.png)
 
 ---
 
@@ -55,7 +55,7 @@ Directory structure:
     ├── reset_password.py
     ├── setup_deploy.bat
     ├── verify_user.py
-    ├── public/
+    ├── static/
     │   └── dashboard.png
     └── templates/
         ├── budgets.html
@@ -73,7 +73,7 @@ Directory structure:
 - **[app.py](file:///c:/Users/SHAHLA/.gemini/antigravity-ide/scratch/IntelliVest_Project_v2/app.py)** – Main application runner containing Flask routing, API endpoints (Simulation, Dashboard, Portfolio), and database initializations.
 - **[models.py](file:///c:/Users/SHAHLA/.gemini/antigravity-ide/scratch/IntelliVest_Project_v2/models.py)** – Database schema declarations for Users, Transactions, Portfolios, and Budgets.
 - **[templates/](file:///c:/Users/SHAHLA/.gemini/antigravity-ide/scratch/IntelliVest_Project_v2/templates)** – Jinja2 HTML templates containing Vue.js reactive bindings, Tailwind styling, and Chart.js visualizations.
-- **[public/](file:///c:/Users/SHAHLA/.gemini/antigravity-ide/scratch/IntelliVest_Project_v2/public)** – Mockups and visual assets for documentation.
+- **[static/](file:///c:/Users/SHAHLA/.gemini/antigravity-ide/scratch/IntelliVest_Project_v2/static)** – Static assets served by Flask, including the dashboard screenshot and other media.
 
 ---
 
@@ -194,3 +194,13 @@ Visit the application at [http://localhost:8080](http://localhost:8080)
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+## 📬 Contact
+
+👨‍💻 **Saifan Nayyar**  
+📧 **saifan0218@gmail.com**
+
+---
+
+### ⭐ Show some love!
+
+If you like this project, **give it a star ⭐ on GitHub**!
