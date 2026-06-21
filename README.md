@@ -197,6 +197,8 @@ Visit the application at [http://localhost:8080](http://localhost:8080)
 ## 📜 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+This project is licensed under the MIT License.
+© 2026 IntelliVest. Educational use only.
 ## 📬 Contact
 
 👨‍💻 **Saifan Nayyar**  
@@ -207,3 +209,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ### ⭐ Show some love!
 
 If you like this project, **give it a star ⭐ on GitHub**!
+
