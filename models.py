@@ -9,7 +9,7 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(100), unique=True, nullable=False)
     password = db.Column(db.String(100), nullable=False)
     name = db.Column(db.String(100), nullable=False)
-    initial_balance = db.Column(db.Float, default=100000.0)
+    initial_balance = db.Column(db.Float, default=0.0)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
     
     # Relationships
@@ -30,6 +30,11 @@ class Portfolio(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
     symbol = db.Column(db.String(20), nullable=False)
     company_name = db.Column(db.String(100))
+    quantity = db.Column(db.Float, default=1.0)
+    purchase_price = db.Column(db.Float, default=0.0)        # Original price in native currency
+    purchase_price_inr = db.Column(db.Float, default=0.0)   # Converted price in INR
+    currency = db.Column(db.String(10), default='INR')       # e.g. USD, GBP, JPY, INR
+    exchange_rate = db.Column(db.Float, default=1.0)         # Rate used at time of purchase
     added_at = db.Column(db.DateTime, default=datetime.utcnow)
 
 class Budget(db.Model):

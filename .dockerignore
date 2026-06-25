@@ -1,0 +1,23 @@
+# Backend ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+venv_new/
+.env
+*.db
+*.sqlite3
+
+# Frontend ignores (in case running from root)
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store

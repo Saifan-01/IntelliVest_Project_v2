@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - intellivest_db:/app/data  # Persist SQLite DB
+    environment:
+      - FLASK_ENV=production
+      # In Docker, we need to map the database to the persisted volume
+      - DATABASE_URL=sqlite:////app/data/finance_v2.db
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      # Connect Next.js to the Flask backend running in the other container
+      # When deployed, change this to the public URL of your backend
+      - NEXT_PUBLIC_API_URL=http://localhost:8080/api
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  intellivest_db:
+    name: intellivest_db_volume
