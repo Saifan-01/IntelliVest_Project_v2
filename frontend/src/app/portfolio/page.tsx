@@ -317,7 +317,7 @@ export default function PortfolioPage() {
         )}
       </motion.div>
 
-      <StockChartModal symbol={selectedChartSymbol} onClose={() => setSelectedChartSymbol(null)} />
+      <StockChartModal stock={selectedChartSymbol ? { symbol: selectedChartSymbol } : null} onClose={() => setSelectedChartSymbol(null)} />
     </div>
   );
 }
