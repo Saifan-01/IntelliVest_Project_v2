@@ -205,7 +205,7 @@ export default function PortfolioPage() {
                           <div 
                             key={idx}
                             onClick={() => {
-                              setNewAsset({ symbol: result.symbol, company_name: result.name });
+                              setNewAsset({ ...newAsset, symbol: result.symbol, company_name: result.name });
                               setSearchResults([]);
                             }}
                             className="px-5 py-4 hover:bg-emerald-500/10 cursor-pointer border-b border-white/5 last:border-0 transition-colors"
