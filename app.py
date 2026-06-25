@@ -55,7 +55,9 @@ def create_app():
     if db_url and db_url.startswith("postgres://"):
         db_url = db_url.replace("postgres://", "postgresql://", 1)
 
-    app.config['SQLALCHEMY_DATABASE_URI'] = db_url or 'sqlite:///finance_v2.db'
+    import tempfile
+    fallback_db = os.path.join(tempfile.gettempdir(), 'finance_v2.db')
+    app.config['SQLALCHEMY_DATABASE_URI'] = db_url or f"sqlite:///{fallback_db}"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # Initialize Extensions
