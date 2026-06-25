@@ -15,7 +15,7 @@
 
 The application integrates the **Yahoo Finance (yfinance) API** for real-time market indices and stock price data, backed by a persistent relational database configured for local development and scalable cloud deployment.
 
-🌍 **Live Demo:** [https://intellivest-project-v2.onrender.com](https://intellivest-project-v2.onrender.com/)
+🌍 **Live Demo:** [[https://intellivest-project-v2.onrender.com](https://intelli-vest-project-v2.vercel.app/)
 
 ---
 
