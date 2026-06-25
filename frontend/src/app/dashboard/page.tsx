@@ -12,7 +12,7 @@ import { Activity, CreditCard, DollarSign, Wallet, LogOut, Edit2, Check, X, Tren
 import { motion, AnimatePresence } from 'framer-motion';
 import { toast } from 'sonner';
 
-const container = {
+const container: any = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
@@ -22,7 +22,7 @@ const container = {
   }
 };
 
-const item = {
+const item: any = {
   hidden: { opacity: 0, y: 20 },
   show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
 };

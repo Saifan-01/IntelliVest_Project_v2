@@ -9,12 +9,12 @@ import { LineChart, TrendingUp, TrendingDown, Activity, Globe, Search, ArrowUpDo
 import StockChartModal from '@/components/StockChartModal';
 import { Input } from '@/components/ui/input';
 
-const container = {
+const container: any = {
   hidden: { opacity: 0 },
-  show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+  show: { opacity: 1, transition: { staggerChildren: 0.05 } }
 };
 
-const item = {
+const item: any = {
   hidden: { opacity: 0, scale: 0.95, y: 20 },
   show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
 };

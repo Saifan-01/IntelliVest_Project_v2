@@ -12,12 +12,12 @@ import { Label } from '@/components/ui/label';
 import { toast } from 'sonner';
 import StockChartModal from '@/components/StockChartModal';
 
-const container = {
+const container: any = {
   hidden: { opacity: 0 },
   show: { opacity: 1, transition: { staggerChildren: 0.1 } }
 };
 
-const item = {
+const item: any = {
   hidden: { opacity: 0, scale: 0.95, y: 20 },
   show: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } }
 };
